@@ -1,0 +1,306 @@
+# Page settings
+
+baseurl = "https://cv.ryangeyer.com/"
+languageCode = "en-us"
+title = "Ryan Geyer"
+theme = "hugo-orbit-theme"
+googleAnalytics = "G-TRTW7QM6VM"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Hugo Responsive Resume/CV Theme for Developers"
+    author = "Pavel Kanyshev"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-4.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Ryan Geyer"
+        tagline = "Cloud Architect & Software Engineer"
+        avatar = "rjgheadshot.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: me@ryangeyer.com"
+        title = "me@ryangeyer.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+18056894203"
+        title = "+1 (805) 689-4203"
+
+        # [[params.contact.list]]
+        # class = "website"
+        # icon = "fa-globe"
+        # url = "//portfoliosite.com"
+        # title = "portfoliosite.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/rjgeyer"
+        title = "linkedin.com/in/rjgeyer"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/rgeyer"
+        title = "github.com/rgeyer"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/rjgeyer"
+        title = "@rjgeyer"
+
+    # Education section
+    [params.education]
+        enable = false
+        title = "Education"
+
+    # Languages section
+    [params.language]
+        enable = false
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Native"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Cycling"
+
+        [[params.interests.list]]
+        interest = "Arduino"
+
+        [[params.interests.list]]
+        interest = "3D Printing"
+
+        [[params.interests.list]]
+        interest = "Photography"
+
+        [[params.interests.list]]
+        interest = "Cars/Motorsports"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = """
+TL;DR - Make Enterprise IT Go Brrr..
+
+I am a Cloud Native architect and engineer, with a history of successfully guiding customers and business partners to proven outcomes at Service Provider and Enterprise IT scale.
+
+My career lies at the center of a venn diagram which includes customer support, computer retail, software engineering, architecture, and operations.
+"""
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Enterprise Integration Engineer"
+        dates = "Aug 2019 - Present"
+        company = "Turbonomic"
+        details = """
+Design and deliver customer integrations to fill gaps or enhance the core Turbonomic Operations Manager functionality.
+
+Primary contributions include;
+* Automated build of base Docker images for integrations delivered in Kubernetes/Openshift.
+  * https://github.com/turbonomic-integrations/docker-base - https://hub.docker.com/r/turbointegrations/base
+  * https://github.com/turbonomic-integrations/docker-reporting - https://hub.docker.com/r/turbointegrations/reporting
+* Standardized Kubernetes deployment for marshalling/executing Turbonomic custom action scripts
+  * https://github.com/turbonomic-integrations/docker-orchestration
+"""
+
+        [[params.jobs.list]]
+        position = "Senior Pre-Sales System Engineer"
+        dates = "May 2018 - Aug 2019"
+        company = "Turbonomic"
+        details = """
+Pre-Sales role in the channel and alliances function. Focus on helping to onboard Cloud Providers (Microsoft and AWS), delivering and refining shared iniatives around initial cloud assessment and migration.
+
+Completed dozens of cloud migration assessments.
+Developed purpose-built tooling for assessments and other activities, including;
+* https://github.com/turbonomiclabs/tbutil-scripts
+* https://github.com/turbonomiclabs/turbo_cloud_tool
+* https://github.com/turbonomiclabs/turbo-opsmgr-letsencrypt
+"""
+
+        [[params.jobs.list]]
+        position = "Cloud Solutions Architect"
+        dates = "Jan 2014 - May 2018"
+        company = "RightScale"
+        details = """
+Understanding the full scope of RightScale's offerings, and providing a holistic view and approach to solving enterprise IT problems using best-of-breed Cloud Portfolio Management tools.
+
+Work with Tier-1 customers and partners to onboard new shared solutions and sell-through offerings. Including backend ETL, and provisioning systems.
+"""
+
+        [[params.jobs.list]]
+        position = "Sales Engineer"
+        dates = "Jul 2011 - Jan 2014"
+        company = "RightScale"
+        details = """
+Help new users to solve business and IT operational problems with RightScale.
+
+Be a sherpa for departments and companies who are new to cloud computing.
+
+Working with ISV technology partners to package their solutions for distribution in the RightScale MultiCloud Marketplace.
+
+Working with cloud partners (Rackspace, Datapipe, Microsoft) to integrate with RightScale abstractions.
+
+Prototyped a Self-Service solution based on available APIs - https://github.com/rgeyer/rs_selfservice
+Self-Service later became a product module of the RightScale suite, in a different form.
+"""
+
+        [[params.jobs.list]]
+        position = "Cloud Architect & SRE"
+        dates = "Apr 2020 - Jul 2011"
+        company = "Mentor Worldwide, LLC, a Johnson & Jonhson Company"
+        details = """
+Managed an existing set of Amazon EC2 instances (approx 60) with no automation or configuration management.
+
+Using Amazon AWS and RightScale defined and implemented highly available IaaS solutions for hosting web applications and sites. The following platforms were used;
+
+Microsoft Windows 2008 R2 running IIS7 and SQL 2008 Express or Standard to host ASP.NET applications, and a Sharepoint 2007 environment.
+
+Ubuntu 9.x & 10.x running Tomcat6 and Apache2 to host Grails applications.
+"""
+
+        [[params.jobs.list]]
+        position = "Software Developer/Analyst"
+        dates = "Jun 2008 - Jul 2011"
+        company = "Mentor Worldwide, LLC"
+        details = """
+Lead Developer & Architect for an innovative, class leading Medical Practice Management software suite including Patient Management, Scheduling, and EMR.
+
+Championed the use of Agile software project management and transitioning the software suite from premise based installed software to SaaS.
+
+Responsibilities include;
+
+* Gathering business requirements from business analysts and translating those requirements for the development team.
+* Reviewing and advising on software specifications from development team.
+* Recommending technology and architecture choices to best meet the business requirements.
+* Limited software development for Proof-Of-Concepts and support/process utilities
+"""
+
+        [[params.jobs.list]]
+        position = "Integration Services Engineer"
+        dates = "Mar 2004 - Jun 2008"
+        company = "Citrix Online"
+        details = """
+* Design and implementation of new &quot;Out-Of-Box&quot; Integration Services offerings based on API's delivered by the Engineering team for Citrix Online's core products GoToMyPC, GoToAssist, and GoToMeeting.
+
+* Consult with Engineering team on new API's to ensure that customer needs and expectations are met, as well as recommending enhancements.
+
+* Write, maintain, and review documention for Integration Services offerings, and open API's.
+
+* Provide support and best-practices for customers using the Integration Services offerings.
+
+* Light to extensive research into new technologies and software applications for future "Out-Of-Box" integrations.
+"""
+
+        [[params.jobs.list]]
+        position = "Helpdesk Coordinator"
+        dates = "Mar 2002 - Mar 2004"
+        company = "Citrix Online"
+        details = """
+* Provide technical support to GoToMyPC and GoToAssist personal and corporate customers.
+
+* Resolve firewall and proxy connectivity issues, typically working closely with network administrators for corporate accounts.
+
+* Provided technical training and mentoring to other Helpdesk coordinators, and customer support representatives.
+"""
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "Miscellaneous things I've worked on and shared personally and professionally."
+
+        [[params.projects.list]]
+        title = "ssm2logger"
+        url = "https://github.com/rgeyer/go-ssm2logger"
+        tagline = "Raspberry Pi powered Subaru datalogger."
+
+        [[params.projects.list]]
+        title = "Pokemon Go Scanner/Map"
+        url = "https://github.com/rgeyer/MapADroid"
+        tagline = "Artifacts related to a Pokemon Go Scanner and mapping software I run for our local community."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Kubernetes"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "Python"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "Amazon Web Services"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "Microsoft Azure"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Grafana"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "Networking"
+        level = "70%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    #
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
