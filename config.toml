@@ -191,7 +191,7 @@ Self-Service later became a product module of the RightScale suite, in a differe
 
         [[params.jobs.list]]
         position = "Cloud Architect & SRE"
-        dates = "Apr 2020 - Jul 2011"
+        dates = "Apr 2010 - Jul 2011"
         company = "Mentor Worldwide, LLC, a Johnson & Jonhson Company"
         details = """
 Managed an existing set of Amazon EC2 instances (approx 60) with no automation or configuration management.
