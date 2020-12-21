@@ -2,7 +2,7 @@ publishDir = "docs"
 
 # Page settings
 
-baseurl = "http://cv.ryangeyer.com/"
+baseurl = "https://cv.ryangeyer.com/"
 languageCode = "en-us"
 title = "Ryan Geyer"
 theme = "hugo-orbit-theme"
