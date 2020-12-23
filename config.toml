@@ -6,7 +6,7 @@ baseurl = "https://cv.ryangeyer.com/"
 languageCode = "en-us"
 title = "Ryan Geyer"
 theme = "hugo-orbit-theme"
-googleAnalytics = "G-TRTW7QM6VM"
+googleAnalytics = "UA-185197551-2"
 
 # Do not build files for websites. Need them? Set to false
 disableRSS = true
